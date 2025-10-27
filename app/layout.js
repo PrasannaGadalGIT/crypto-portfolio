@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import { SolanaProvider } from "@/provider/solana-provider";
+import WalletConnectButton from "@/components/WalletConnectButton";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,7 +23,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <SolanaProvider>
+            {children}
+            <WalletConnectButton/>
+        </SolanaProvider>
+      
       </body>
     </html>
   );
