@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="flex pt-30 pb-10 bg-gray-50 items-center justify-center px-6">
+    <section className="flex pt-30 pb-10 items-center justify-center px-6">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center bg-linear-30">
         {/* Left */}
         <div className="space-y-6">
@@ -36,7 +36,7 @@ export default function HeroSection() {
             alt="Web3 Credit Score Visualization"
             width={1200}
             height={900}
-            className="rounded-2xl shadow-lg w-full max-w-md"
+            className="rounded-2xl shadow-lg w-full max-w-2xl"
           />
         </div>
       </div>
