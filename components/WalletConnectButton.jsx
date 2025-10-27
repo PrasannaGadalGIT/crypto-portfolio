@@ -44,7 +44,7 @@ export default function WalletConnectButton() {
     <div className="relative">
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className=" px-4 py-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-100 transition flex items-center gap-2"
+        className=" px-4 py-2 rounded-lg border border-gray-300 bg-black text-white hover:bg-purple-800 transition flex items-center gap-2"
       >
         {isConnected && selectedAccount ? (
           <>
@@ -83,8 +83,8 @@ export default function WalletConnectButton() {
             </div>
           ) : (
             <div className="p-2">
-              <p className="text-xs text-gray-500 mb-2">Connected</p>
-              <div className="flex items-center justify-between px-2 py-1 text-sm border rounded-md">
+              <p className="font-extrabold text-gray-500 mb-2">Connected</p>
+              <div className="flex items-center justify-between px-2 py-1 text-lg border rounded-md">
                 <span>{selectedWallet?.name}</span>
                 <span className="font-mono">{truncateAddress(selectedAccount?.address)}</span>
               </div>
