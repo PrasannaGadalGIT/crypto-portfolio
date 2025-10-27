@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
@@ -19,10 +20,26 @@ export default function Footer() {
         <div className="space-y-2">
           <h4 className="font-semibold text-white mb-2">Quick Links</h4>
           <ul className="space-y-1 text-sm">
-            <li><a href="#dashboard" className="hover:text-purple-500 transition">Dashboard</a></li>
-            <li><a href="#lend" className="hover:text-purple-500 transition">Lend</a></li>
-            <li><a href="#borrow" className="hover:text-purple-500 transition">Borrow</a></li>
-            <li><a href="#about" className="hover:text-purple-500 transition">About Us</a></li>
+            <li>
+              <Link href="/dashboard" className="hover:text-purple-500 transition">
+                Dashboard
+              </Link>
+            </li>
+            <li>
+              <Link href="/lend" className="hover:text-purple-500 transition">
+                Lend
+              </Link>
+            </li>
+            <li>
+              <Link href="/borrow" className="hover:text-purple-500 transition">
+                Borrow
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-purple-500 transition">
+                About Us
+              </Link>
+            </li>
             <li><a href="#contact" className="hover:text-purple-500 transition">Contact</a></li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-linear-to-l from-purple-100 to-gray-200">
+    <div className="bg-linear-to-l from-purple-200 to-gray-300">
       <HeroSection />
       <HowItWorks />
       <DashboardSlide />
