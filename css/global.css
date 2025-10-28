@@ -1,0 +1,101 @@
+/* ------------------------------ */
+/* Tailwind v4 global CSS setup */
+/* ------------------------------ */
+
+/* Preflight reset (replaces @tailwind base) */
+@import "tailwindcss/preflight";
+
+/* Utilities (includes what @tailwind components and @tailwind utilities used to do) */
+@tailwind utilities;
+
+/* ------------------------------ */
+/* Custom colors, gradients, shadows */
+/* ------------------------------ */
+
+/* Example background gradient for hero sections or cards */
+.bg-gradient-primary {
+  background: linear-gradient(to right, #7c3aed, #3b82f6);
+}
+
+/* Subtle gradient for cards */
+.bg-gradient-card {
+  background: linear-gradient(to bottom right, rgba(124, 58, 237, 0.08), rgba(59, 130, 246, 0.08));
+}
+
+/* Box shadow for cards */
+.shadow-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------ */
+/* Animations */
+/* ------------------------------ */
+
+/* Fade in up animation */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Simple fade in */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Floating effect for images or cards */
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ------------------------------ */
+/* Utility classes (optional) */
+/* ------------------------------ */
+
+/* Center container with padding */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Muted text */
+.text-muted-foreground {
+  color: #6b7280;
+}
+
+/* Background overlay */
+.bg-overlay {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Rounded buttons */
+.btn-rounded {
+  border-radius: 0.75rem;
+}
+
+/* Gradient text */
+.text-gradient-primary {
+  background: linear-gradient(to right, #7c3aed, #3b82f6);
+  background-clip: text;
+  -webkit-background-clip: text; /* for Safari */
+  -webkit-text-fill-color: transparent;
+}
