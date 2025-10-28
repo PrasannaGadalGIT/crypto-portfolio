@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
       <HowItWorks />
       <DashboardSlide />
-      <ContactUs />
+     
       <Footer />
     </div>
   );
